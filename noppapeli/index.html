@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form class="menu" id="menu">
+            <p class="otsikko" id="otsikko">Sikanoppapeli</p>
+            <img src="assets/img/btn2.png" class="panel2" id="panel2">
+            <img src="assets/img/btn.png" class="btn btn1" id="btn1">
+            <img src="assets/img/btn.png" class="btn btn2" id="btn2">
+            <img src="assets/img/btn.png" class="btn btn3" id="btn3">
+            <img src="assets/img/btn.png" class="btn btn4" id="btn4">
+            <img src="assets/img/btn.png" class="btn btn5" id="btn5">
+            <img src="assets/img/btn.png" class="btn btn6" id="btn6">
+            <img src="assets/img/btn.png" class="btn btn7" id="btn7">
+            <input type="text" class="pelaaja pelaaja1" id="pelaaja1"> 
+            <input type="text" class="pelaaja pelaaja2" id="pelaaja2"> 
+            <input type="text" class="pelaaja pelaaja3" id="pelaaja3"> 
+            <input type="text" class="pelaaja pelaaja4" id="pelaaja4"> 
+            <input type="text" class="pelaaja pelaaja5" id="pelaaja5">
+            <input type="submit" class="submit" id="submit" value="Aloita peli">
+            <input type="button" class="submit saannot" id="saannot" value="Säännöt">
+            <input type="checkbox" class="noppacheck1" id="noppacheck1"> 
+            <input type="checkbox" class="noppacheck2" id="noppacheck2"> 
+            <img src="assets/img/1side.png" class="check1">
+            <img src="assets/img/2side.png" class="check2">
+            <img src="assets/img/arrow.png" class="arrow arrow1" id="nuoli">
+            <img src="assets/img/arrow2.png" class="arrow arrow2" id="nuoli2">
+            <p class="noppavalintateksti">Haluatko pelata yhdellä vai kahdella nopalla?</p>
+            <p class="title title1">Pelaaja 1:</p>
+            <p class="title title2">Pelaaja 2:</p>
+            <p class="title title3">Pelaaja 3:</p>
+            <p class="title title4">Pelaaja 4:</p>
+            <p class="title title5">Maksimipisteet:</p>
+            <p class="title title6">Lue säännöt ennen pelaamista!</p>
+        </form>
+        <p class="title7" id="informaatio">Käännä näyttö pelataksesi peliä...(en jaksa optimoida mobiilille)</p>
+        <div class="peliruutu" id="peliruutu">
+            <img src="assets/img/panel.jpg" class="panel" id="panel">
+            <img src="assets/img/btn.png" class="btn btn8" id="btn8">
+            <img src="assets/img/btn.png" class="btn btn9" id="btn9">
+            <p class="heitateksti" id="heitateksti">Heitä</p>
+            <p class="lopetateksti" id="lopetateksti">Lopeta vuoro</p>
+            <span class="pelitext valisumma2" id="valisumma2">Pelaajan pisteet: 0</span>
+            <span class="pelitext pelaaja1pisteet" id="pelaaja1pisteet"></span>
+            <span class="pelitext pelaaja2pisteet" id="pelaaja2pisteet"></span>
+            <span class="pelitext pelaaja3pisteet" id="pelaaja3pisteet"></span>
+            <span class="pelitext pelaaja4pisteet" id="pelaaja4pisteet"></span>
+            <span class="pelitext valisumma" id="valisumma"></span>
+            <span class="pelitext tuplat" id="tuplat"></span>
+            <span class="tavoite" id="tavoite"></span>
+        </div>
+        <div class="voittoruutu" id="voittoruutu">
+            <span class="title8" id="voittoteksti"></span>
+        </div>
+        <div class="dice" id="dice">
+            <img src="assets/img/1side.png" class="side1" id="side1">
+            <img src="assets/img/2side.png" class="side2" id="side2">
+            <img src="assets/img/3side.png" class="side3" id="side3">
+            <img src="assets/img/4side.png" class="side4" id="side4">
+            <img src="assets/img/5side.png" class="side5" id="side5">
+            <img src="assets/img/6side.png" class="side6" id="side6">
+        </div>
+        <div class="dice2" id="dice2">
+            <img src="assets/img/1side.png" class="side11" id="side11">
+            <img src="assets/img/2side.png" class="side12" id="side12">
+            <img src="assets/img/3side.png" class="side13" id="side13">
+            <img src="assets/img/4side.png" class="side14" id="side14">
+            <img src="assets/img/5side.png" class="side15" id="side15">
+            <img src="assets/img/6side.png" class="side16" id="side16">
+        </div>
+        <div class="saantoruutu" id="saantoruutu">
+            <p class="otsikko" id="otsikko">Sikanoppapeli</p>
+            <img src="assets/img/btn2.png" class="panel2">
+            <img src="assets/img/btn3.png" class="panel3">
+            <h1 class="title11 saannottext">Säännöt:</h1>
+            <p class="title11 saannottext2">Kerää sata pistettä tai enemmän 
+                heittämällä noppaa tai noppia ja laskemalla heittojen summa yhteen. (maksimipisteet voi määrittää itse)</p>
+            <p class="title11 saannottext3">Pelaaja heittää omalla vuorollaan noppaa niin pitkään, kunnes:</p>
+            <p class="title11 saannottext4">a. heittää ykkösen</p>
+            <p class="title11 saannottext5">b. päättää lopettaa heittämisen</p>
+            <p class="title11 saannottext6">c. heittää kolmannet tuplat peräkkäin</p>
+            <p class="title11 saannottext7">Jos pelaaja heittää ykkösen tai kolmannet tuplat peräkkäin, hänen vuoronsa
+                loppuu ja sen kierroksen heittojen summa nollataan. Jos pelaaja päättää</p>
+            <p class="title11 saannottext8">    lopettaa heittämisen ennen kuin hän heittää ykkösen tai kolmannet tuplat 
+                peräkkäin, heittojen summa lasketaan yhteen ja lisätään edellisen kierroksen summaan.</p>                
+            <h2 class="title11 saannottext9">    Kahdella nopalla heitettäessä tuplat (esim. 6 ja 6), saat tuplapisteet (24). Kaksi 
+                ykköstä on 25 pistettä.</h2>
+            <img src="assets/img/btn.png" class="btn btn7" id="btn7">
+            <input type="button" class="submit saannot" id="takaisin" value="Takaisin">
+        </div>
+    </div>
+
+
+
+    </div>  
+<script src="main.js"></script>
+</body>
+</html>
